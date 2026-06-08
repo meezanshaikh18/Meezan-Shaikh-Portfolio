@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background:
+    radial-gradient(circle at top left, #312e81, transparent 30%),
+    radial-gradient(circle at top right, #1d4ed8, transparent 30%),
+    #0f172a;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
