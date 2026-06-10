@@ -15,8 +15,10 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-24 px-6 max-w-5xl mx-auto text-white">
-
+    <section
+      id="education"
+      className="py-24 px-6 max-w-5xl mx-auto text-white"
+    >
       <h2 className="text-4xl font-bold text-center mb-16">
         Education
       </h2>

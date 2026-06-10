@@ -25,8 +25,9 @@ const Hero = () => {
           words={[
             "Meezan Shaikh",
             "AI Engineer",
+            "Data Analyst",
             "Full Stack Developer",
-            "Data Science Student"
+            "Data Science Student",
           ]}
           loop={true}
           cursor
@@ -44,7 +45,7 @@ const Hero = () => {
         transition={{ delay: 0.3 }}
         className="mt-6 text-lg md:text-2xl text-gray-300 max-w-4xl z-10"
       >
-        AI & Data Science Student | Full Stack MERN Developer | Generative AI Enthusiast
+        AI & Data Science Student | Data Analyst | Generative AI Enthusiast | Full Stack MERN Developer
       </motion.p>
 
       {/* Buttons */}

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* =========================
+   GLOBAL THEME
+========================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,14 +11,68 @@ html {
 body {
   margin: 0;
   color: white;
+
+  /* Your portfolio identity background */
   background:
-    radial-gradient(circle at top left, #312e81, transparent 30%),
-    radial-gradient(circle at top right, #1d4ed8, transparent 30%),
+    radial-gradient(circle at top left, #1e1b4b, transparent 45%),
+    radial-gradient(circle at top right, #1e3a8a, transparent 45%),
     #0f172a;
+
+  overflow-x: hidden;
 }
 
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   SECTION SYSTEM
+========================= */
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/* =========================
+   GLASS UI SYSTEM
+========================= */
+
 .glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass:hover {
+  border-color: rgba(168, 85, 247, 0.5);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   INFINITE SLIDER ANIMATION
+   (Certifications carousel)
+========================= */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
+}
+
+/* Pause ONLY when hovering slider container */
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
 }
