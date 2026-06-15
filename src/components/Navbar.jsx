@@ -93,7 +93,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/meezan-shaikh-171304307"
             target="_blank"
             rel="noreferrer"
           >

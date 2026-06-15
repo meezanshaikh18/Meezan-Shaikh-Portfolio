@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section id="contact" className="py-28 px-6 max-w-4xl mx-auto text-center">
-
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,9 +17,7 @@ const Contact = () => {
         </p>
 
         <div className="glass p-10 rounded-2xl mt-10">
-
           <div className="flex flex-wrap justify-center gap-5">
-
             <a
               href="mailto:meezanraza1803@gmail.com"
               className="px-5 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition flex items-center gap-2"
@@ -31,6 +28,7 @@ const Contact = () => {
             <a
               href="https://github.com/meezanshaikh18"
               target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl border border-gray-600 hover:border-white transition flex items-center gap-2"
             >
               <FaGithub /> GitHub
@@ -39,16 +37,14 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/meezan-shaikh-171304307/"
               target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-3 rounded-xl border border-blue-500 hover:bg-blue-500/10 transition flex items-center gap-2"
             >
               <FaLinkedin /> LinkedIn
             </a>
-
           </div>
-
         </div>
       </motion.div>
-
     </section>
   );
 };
