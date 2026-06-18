@@ -19,13 +19,13 @@ const skillsData = [
   {
     title: "🧠 AI / Generative AI",
     skills: [
-      "Artificial Intelligence (AI)",
-      "Machine Learning (ML)",
-      "Generative AI (GenAI)",
+      // "Artificial Intelligence (AI)",
+      // "Machine Learning (ML)",
+      // "Generative AI (GenAI)",
       "Prompt Engineering",
-      "AI Agents (basic understanding)",
+      // "AI Agents (basic understanding)",
       "Google Gemini API",
-      "LLM-based Applications",
+      // "LLM-based Applications",
       "AI Chatbot Development",
     ],
   },
