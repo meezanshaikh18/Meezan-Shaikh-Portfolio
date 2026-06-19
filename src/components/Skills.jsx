@@ -17,15 +17,6 @@ const skillsData = [
     ],
   },
   {
-    title: "📊 BI & Visualization Tools",
-    skills: [
-      "Excel (Advanced Basics)",
-      "Power BI",
-      "Google Sheets",
-      "Dashboard Creation",
-    ],
-  },
-  {
     title: "🧠 AI / Generative AI",
     skills: [
       "Artificial Intelligence (AI)",
@@ -36,6 +27,15 @@ const skillsData = [
       "Google Gemini API",
       "LLM-based Applications",
       "AI Chatbot Development",
+    ],
+  },
+  {
+    title: "📊 BI & Visualization Tools",
+    skills: [
+      "Excel (Advanced Basics)",
+      "Power BI",
+      "Google Sheets",
+      "Dashboard Creation",
     ],
   },
   {
