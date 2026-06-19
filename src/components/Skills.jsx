@@ -17,15 +17,24 @@ const skillsData = [
     ],
   },
   {
+    title: "📊 BI & Visualization Tools",
+    skills: [
+      "Excel (Advanced Basics)",
+      "Power BI",
+      "Google Sheets",
+      "Dashboard Creation",
+    ],
+  },
+  {
     title: "🧠 AI / Generative AI",
     skills: [
-      // "Artificial Intelligence (AI)",
-      // "Machine Learning (ML)",
-      // "Generative AI (GenAI)",
+      "Artificial Intelligence (AI)",
+      "Machine Learning (ML)",
+      "Generative AI (GenAI)",
       "Prompt Engineering",
-      // "AI Agents (basic understanding)",
+      "AI Agents (basic understanding)",
       "Google Gemini API",
-      // "LLM-based Applications",
+      "LLM-based Applications",
       "AI Chatbot Development",
     ],
   },
@@ -42,16 +51,7 @@ const skillsData = [
       "MERN Stack Development",
     ],
   },
-  {
-    title: "📊 BI & Visualization Tools",
-    skills: [
-      "Excel (Advanced Basics)",
-      "Power BI",
-      "Google Sheets",
-      "Dashboard Creation",
-    ],
-  },
-  {
+{
     title: "⚙️ Backend & Integration",
     skills: [
       "Socket.io (basic)",
@@ -94,6 +94,7 @@ const Skills = () => {
         </h2>
         <p className="text-gray-400 mt-3">
           Data Analyst + AI + Full Stack Developer Skill Set
+
         </p>
       </motion.div>
 
