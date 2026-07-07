@@ -1,17 +1,26 @@
 import { motion } from "framer-motion";
 
+import deloitteDataAnalytics from "../assets/certificates/deloitte-data-analytics.jpg";
 import iitIndore from "../assets/certificates/iit-indore.jpg";
 import dsaApnaCollege from "../assets/certificates/dsa-apna-college.jpg";
 import aiFundamentals from "../assets/certificates/ai-fundamentals.jpg";
 import awsBeginners from "../assets/certificates/aws-beginners.jpg";
 import blinkitWorkshop from "../assets/certificates/blinkit-workshop.jpg";
-
+import microsoftSql from "../assets/certificates/microsoft-sql-certification-training.jpg";
+import sqlCourse from "../assets/certificates/sql-course-intellipaat.jpg";
 import mernInternship from "../assets/certificates/mern-internship.png";
 import mernTraining from "../assets/certificates/mern-training.png";
 import mernParticipation from "../assets/certificates/mern-participation.png";
 
 const certificates = [
   {
+  title: "Deloitte Data Analytics Job Simulation",
+  issuer: "Deloitte - Forage",
+  image: deloitteDataAnalytics,
+  pdf: "/certificates/1. Deloitte Data Analytics Job Simulation.pdf",
+  featured: true,
+ },
+ {
     title: "AI & Data Science Program",
     issuer: "DRISHTI CPS, IIT Indore",
     image: iitIndore,
@@ -19,16 +28,28 @@ const certificates = [
     featured: true,
   },
   {
-    title: "Data Structures & Algorithms",
-    issuer: "Apna College",
-    image: dsaApnaCollege,
-    pdf: "/certificates/4. Data Structures & Algorithms - Apna College.pdf",
+  title: "Microsoft SQL Certification Training",
+  issuer: "Microsoft - Intellipaat",
+  image: microsoftSql,
+  pdf: "/certificates/3. Microsoft SQL Certification Training.pdf",
+ },
+ {
+  title: "SQL Course",
+  issuer: "Intellipaat",
+  image: sqlCourse,
+  pdf: "/certificates/4. SQL Course (Intellipaat).pdf",
   },
   {
     title: "Artificial Intelligence Fundamentals",
     issuer: "Great Learning",
     image: aiFundamentals,
     pdf: "/certificates/2. Artificial Intelligence Fundamentals - Great Learning.pdf",
+  },
+  {
+    title: "Data Structures & Algorithms",
+    issuer: "Apna College",
+    image: dsaApnaCollege,
+    pdf: "/certificates/4. Data Structures & Algorithms - Apna College.pdf",
   },
   {
     title: "AWS for Beginners",
