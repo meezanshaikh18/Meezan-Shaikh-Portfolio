@@ -3,6 +3,19 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Data Analytics Journey",
+    desc: "A public repository documenting my day-by-day journey to becoming a Data Analyst. It includes SQL, Excel, Python, Power BI, hands-on exercises, mini projects, datasets, and consistent daily progress updates while building practical analytics skills.",
+    tech: [
+      "SQL",
+      "Excel",
+      "Python",
+      "Power BI",
+      "Git",
+      "GitHub",
+    ],
+    github: "https://github.com/meezanshaikh18/Meezan-Data-Analytics-Journey.git",
+  },
+  {
     title: "AI-Powered Collaborative Developer Workspace",
     desc: "Real-time collaborative coding platform with AI assistance, chat-based interaction, and shared workspace for developers.",
     tech: ["React", "Node", "Socket.io", "AI"],
