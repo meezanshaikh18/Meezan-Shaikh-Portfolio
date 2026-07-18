@@ -69,8 +69,8 @@ const Hero = () => {
         </button>
 
         <a
-          href="/Meezan_Shaikh_Resume.pdf"
-          download="Meezan_Shaikh_Resume.pdf"
+          href="/Meezan Shaikh Resume DataAnalyst.pdf"
+          download="Meezan Shaikh Resume DataAnalyst.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 rounded-xl border border-purple-500 hover:bg-purple-500/10 transition"
