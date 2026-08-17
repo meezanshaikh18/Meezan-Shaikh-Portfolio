@@ -3,15 +3,22 @@ import { motion } from "framer-motion";
 const Education = () => {
   const data = [
     {
-      title: "Bachelor of Business Administration (Computer Application)",
-      org: "YEWS National Senior College, Nashik",
-      year: "2023 – 2026",
+      title: "Master of Computer Applications (MCA)",
+      org: "Sandip University, Nashik",
+      year: "Ongoing",
     },
     {
       title: "AI & Data Science Certificate Program",
       org: "DRISHTI CPS, IIT Indore",
       year: "Ongoing",
     },
+    {
+      title: "Bachelor of Business Administration (Computer Application)",
+      org: "YEWS National Senior College, Nashik",
+      year: "2023 – 2026",
+      grade: "Grade: A | CGPA: 7/10",
+    },
+    
   ];
 
   return (
@@ -50,6 +57,13 @@ const Education = () => {
                 <p className="text-xs text-gray-400 mt-1">
                   {item.year}
                 </p>
+                
+                {item.grade && (
+                  <p className="text-xs text-gray-400 mt-1">
+                    {item.grade}
+                  </p>
+                )}
+                
               </div>
             </motion.div>
           ))}
