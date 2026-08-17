@@ -24,7 +24,7 @@ const certificates = [
     title: "AI & Data Science Program",
     issuer: "DRISHTI CPS, IIT Indore",
     image: iitIndore,
-    pdf: "/certificates/1. AI & Data Science Program - PCP Certificate from IIT Indore.pdf",
+    pdf: "/certificates/2. AI & Data Science Program - PCP Certificate from IIT Indore.pdf",
     featured: true,
   },
   {
@@ -61,25 +61,25 @@ const certificates = [
     title: "MERN Stack Internship",
     issuer: "MERN Development",
     image: mernInternship,
-    pdf: "/certificates/mern-internship.pdf",
+    pdf: "/certificates/8. mern-internship.pdf",
   },
   {
     title: "MERN Stack Training",
     issuer: "MERN Development",
     image: mernTraining,
-    pdf: "/certificates/mern-training.pdf",
+    pdf: "/certificates/9. mern-training.pdf",
   },
   {
     title: "MERN Stack Participation",
     issuer: "MERN Development",
     image: mernParticipation,
-    pdf: "/certificates/mern-participation.pdf",
+    pdf: "/certificates/10.mern-participation.pdf",
   },
   {
     title: "Blinkit Clone using AI Workshop",
     issuer: "Cuvette",
     image: blinkitWorkshop,
-    pdf: "/certificates/5. Blinkit Clone using AI Workshop - Cuvette.pdf",
+    pdf: "/certificates/11. Blinkit Clone using AI Workshop - Cuvette.pdf",
   },
 ];
 
