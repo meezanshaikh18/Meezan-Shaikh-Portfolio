@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
 /* =========================
-   GLOBAL THEME
+   THEME TOKENS
+   Blackish base — purple / green / hint of blue
 ========================= */
+
+:root {
+  --bg-base: #08090b;
+  --bg-panel: #121319;
+  --bg-panel-2: #171821;
+  --border-hairline: #262836;
+  --border-hairline-strong: #333648;
+
+  --accent-purple: #8b5cf6;
+  --accent-green: #22e5a0;
+  --accent-blue: #3b82f6;
+
+  --accent-soft: rgba(139, 92, 246, 0.12);
+  --accent-glow: rgba(34, 229, 160, 0.25);
+
+  --text-primary: #f2f3f5;
+  --text-muted: #9ca0ac;
+
+  --font-display: "Sora", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -10,19 +33,93 @@ html {
 
 body {
   margin: 0;
-  color: white;
-
-  background:
-    radial-gradient(circle at top left, #1e1b4b, transparent 45%),
-    radial-gradient(circle at top right, #1e3a8a, transparent 45%),
-    #0f172a;
-
+  position: relative;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
   overflow-x: hidden;
+
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(650px 450px at 88% -8%, rgba(139, 92, 246, 0.14), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+/* =========================
+   ANIMATED BACKGROUND GLOW
+   Two soft blurred blobs (green + blue) that
+   slowly drift and pulse behind all content
+========================= */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+}
+
+body::before {
+  top: -10%;
+  left: -10%;
+  width: 55vw;
+  height: 55vw;
+  max-width: 700px;
+  max-height: 700px;
+  background: var(--accent-green);
+  opacity: 0.12;
+  animation: drift-green 22s ease-in-out infinite;
+}
+
+body::after {
+  bottom: -15%;
+  right: -10%;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  max-height: 650px;
+  background: var(--accent-blue);
+  opacity: 0.12;
+  animation: drift-blue 26s ease-in-out infinite;
+}
+
+@keyframes drift-green {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(6vw, 8vh) scale(1.15);
+    opacity: 0.18;
+  }
+}
+
+@keyframes drift-blue {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(-7vw, -6vh) scale(1.12);
+    opacity: 0.17;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
 }
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
 }
 
 /* =========================
@@ -34,20 +131,48 @@ section {
 }
 
 /* =========================
-   GLASS EFFECT
+   PANEL (replaces glass)
 ========================= */
 
 .glass {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  background: linear-gradient(180deg, var(--bg-panel-2), var(--bg-panel));
+  border: 1px solid var(--border-hairline);
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 14px 28px -18px rgba(0, 0, 0, 0.7);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .glass:hover {
-  border-color: rgba(168, 85, 247, 0.5);
-  transform: translateY(-3px);
+  border-color: rgba(34, 229, 160, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset,
+    0 18px 36px -18px rgba(0, 0, 0, 0.75),
+    0 0 32px -8px var(--accent-glow);
+}
+
+/* =========================
+   SIGNATURE GRADIENT TEXT
+========================= */
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--accent-purple), var(--accent-green));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(100deg, var(--accent-purple), var(--accent-green));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
+.text-blue-accent {
+  color: var(--accent-blue);
 }
 
 /* =========================
@@ -70,7 +195,6 @@ section {
   animation: scroll 18s linear infinite;
 }
 
-/* Pause slider on hover */
 .animate-scroll:hover {
   animation-play-state: paused;
 }
