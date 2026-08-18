@@ -90,7 +90,7 @@ export default function Certifications() {
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-12"
         >
@@ -103,7 +103,7 @@ export default function Certifications() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
+              transition={{ duration: 0.4, delay: index * 0.04 }}
               viewport={{ once: true }}
               whileHover={{
                 y: -8,
