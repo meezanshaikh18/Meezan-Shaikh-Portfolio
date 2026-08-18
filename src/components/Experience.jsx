@@ -20,7 +20,7 @@ const experiences = [
     role: "Data Analysis Using Python Intern",
     company: "Auspify Technologies",
     duration: "2 Months",
-    proof: "/certificates/data-analysis-internship.pdf",
+    proof: "/certificates/12. Auspify Technologies Intern - Certificate.pdf",
     description: [
       "Analyzing [type of dataset, e.g. sales/customer/operational data] using Python (Pandas, NumPy) to identify trends and support business decisions.",
       "Creating visualizations using Matplotlib and Seaborn to communicate findings effectively.",
