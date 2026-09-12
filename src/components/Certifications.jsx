@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import awscloudpractitioneressentials from "../assets/certificates/aws-cloud-practitioner-essentials.jpg";
 import deloitteDataAnalytics from "../assets/certificates/deloitte-data-analytics.jpg";
 import iitIndore from "../assets/certificates/iit-indore.jpg";
 import dsaApnaCollege from "../assets/certificates/dsa-apna-college.jpg";
@@ -11,7 +12,7 @@ import sqlCourse from "../assets/certificates/sql-course-intellipaat.jpg";
 import mernInternship from "../assets/certificates/mern-internship.png";
 import mernTraining from "../assets/certificates/mern-training.png";
 import mernParticipation from "../assets/certificates/mern-participation.png";
-import awscloudpractitioneressentials from "../assets/certificates/aws-cloud-practitioner-essentials.jpg";
+
 
 const certificates = [
   {
