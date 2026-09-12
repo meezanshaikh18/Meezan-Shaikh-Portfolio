@@ -1,25 +1,39 @@
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
-  {
-    title: "Data Analytics Journey",
-    desc: "A public repository documenting my day-by-day journey to becoming a Data Analyst. It includes SQL, Excel, Python, Power BI, hands-on exercises, mini projects, datasets, and consistent daily progress updates while building practical analytics skills.",
-    tech: [
-      "SQL",
-      "Excel",
-      "Python",
-      "Power BI",
-      "Git",
-      "GitHub",
-    ],
-    github: "https://github.com/meezanshaikh18/Meezan-Data-Analytics-Journey.git",
-  },
   {
     title: "AI-Powered Collaborative Developer Workspace",
     desc: "Real-time collaborative coding platform with AI assistance, chat-based interaction, and shared workspace for developers.",
     tech: ["React", "Node", "Socket.io", "AI"],
     github: "https://github.com/meezanshaikh18/AI-Powered_Collaborative_Developer_Workspace.git",
+  },
+  {
+    title: "CivicLens AI",
+    desc: "AI-powered civic issue reporting and intelligent prioritization platform that analyzes citizen complaints, assesses severity and risk, recommends departments, and helps municipal teams track and resolve issues.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "AI/ML", "Leaflet"],
+    github: "https://github.com/meezanshaikh18/CivicLens-AI.git",
+    live: "https://civic-lens-ai-seven.vercel.app/",
+  },
+  {
+  title: "AI Engineering Journey",
+
+  desc: "A public repository documenting my journey toward becoming an AI/ML Engineer. It covers Python, SQL, data handling, machine learning, deep learning, generative AI, MLOps, cloud technologies, hands-on projects, interview preparation, and consistent learning progress.",
+
+  tech: [
+    "Python",
+    "SQL",
+    "NumPy",
+    "Pandas",
+    "Machine Learning",
+    "Deep Learning",
+    "Generative AI",
+    "MLOps",
+    "Git",
+    "GitHub",
+  ],
+
+  github: "https://github.com/meezanshaikh18/AI-Engineering-Journey.git",
   },
   {
     title: "Prescripto - Doctor Appointment System",
@@ -100,14 +114,28 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* BUTTON */}
-              <a
-                href={project.github}
-                target="_blank"
-                className="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-lg bg-white/5 border border-white/10 hover:border-white transition"
-              >
-                <FaGithub /> View Code
-              </a>
+              {/* BUTTONS */}
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-lg bg-white/5 border border-white/10 hover:border-white transition"
+                >
+                  <FaGithub /> View Code
+                </a>
+
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-sm rounded-lg bg-white/5 border border-white/10 hover:border-white transition"
+                  >
+                    <FaExternalLinkAlt /> Live Demo
+                  </a>
+                )}
+              </div>
 
             </div>
           </motion.div>

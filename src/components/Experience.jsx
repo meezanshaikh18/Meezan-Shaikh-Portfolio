@@ -2,10 +2,52 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    role: "AI/ML Intern - Training",
+    company: "Elythra Edufiy Tech Solutions",
+    duration: "Present",
+    proof: "",
+    description: [
+      "Participating in structured, industry-oriented AI training and practical learning activities.",
+      "Working on assigned learning modules, practical assignments, assessments, and industry-oriented projects.",
+      "Applying AI concepts to practical business scenarios under mentor guidance.",
+      "Collaborating with mentors and fellow interns while developing practical AI skills."
+    ],
+    tech: ["Artificial Intelligence", "AI/ML", "Generative AI", "Problem Solving", "Indstry Training", "Technical Documentation "],
+  },
+  {
+    role: "Data Analytics Job Simulation Participant",
+    company: "Deloitte (via Forage)",
+    duration: "2 Month",
+    proof: "/certificates/1. Deloitte Data Analytics Job Simulation.pdf",
+    description: [
+      "Completed Deloitte Australia's Data Analytics Job Simulation on Forage.",
+      "Analyzed business datasets using Excel.",
+      "Built an interactive Tableau dashboard to communicate insights.",
+      "Applied data cleaning, classification, and visualization techniques.",
+      "Developed practical skills in data analytics and business reporting",
+    ],
+    tech: ["Excel", "SQL", "Python", "Tableau","Data Analysis", "Data Cleaning", "Data Visualization"]
+  },
+
+  {
+    role: "Data Analysis Using Python Intern",
+    company: "Auspify Technologies",
+    duration: "2 Months",
+    proof: "/certificates/data-analysis-internship.pdf",
+    description: [
+      "Analyzing [type of dataset, e.g. sales/customer/operational data] using Python (Pandas, NumPy) to identify trends and support business decisions.",
+      "Creating visualizations using Matplotlib and Seaborn to communicate findings effectively.",
+      "Collaborating with team members to clean and preprocess data for analysis.",
+      "Documenting analysis processes and results for future reference."
+    ],
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", ]
+  },
+  
+  {
     role: "MERN Stack Developer Intern",
-    company: "3-Month Internship Program",
+    company: "Extech Digital ",
     duration: "3 Months",
-    proof: "/certificates/mern-internship.pdf",
+    proof: "/certificates/8. mern-internship.pdf",
     description: [
       "Developed full-stack web applications using MERN stack.",
       "Worked with REST APIs and authentication systems.",

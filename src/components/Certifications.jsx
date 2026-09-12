@@ -11,6 +11,7 @@ import sqlCourse from "../assets/certificates/sql-course-intellipaat.jpg";
 import mernInternship from "../assets/certificates/mern-internship.png";
 import mernTraining from "../assets/certificates/mern-training.png";
 import mernParticipation from "../assets/certificates/mern-participation.png";
+import awscloudpractitioneressentials from "../assets/certificates/aws-cloud-practitioner-essentials.jpg";
 
 const certificates = [
   {
@@ -24,7 +25,7 @@ const certificates = [
     title: "AI & Data Science Program",
     issuer: "DRISHTI CPS, IIT Indore",
     image: iitIndore,
-    pdf: "/certificates/1. AI & Data Science Program - PCP Certificate from IIT Indore.pdf",
+    pdf: "/certificates/2. AI & Data Science Program - PCP Certificate from IIT Indore.pdf",
     featured: true,
   },
   {
@@ -38,6 +39,12 @@ const certificates = [
   issuer: "Intellipaat",
   image: sqlCourse,
   pdf: "/certificates/4. SQL Course (Intellipaat).pdf",
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    image: awscloudpractitioneressentials,
+    pdf: "/certificates/12. AWS Cloud Practitioner Essentials.pdf",
   },
   {
     title: "Artificial Intelligence Fundamentals",
@@ -61,25 +68,25 @@ const certificates = [
     title: "MERN Stack Internship",
     issuer: "MERN Development",
     image: mernInternship,
-    pdf: "/certificates/mern-internship.pdf",
+    pdf: "/certificates/8. mern-internship.pdf",
   },
   {
     title: "MERN Stack Training",
     issuer: "MERN Development",
     image: mernTraining,
-    pdf: "/certificates/mern-training.pdf",
+    pdf: "/certificates/9. mern-training.pdf",
   },
   {
     title: "MERN Stack Participation",
     issuer: "MERN Development",
     image: mernParticipation,
-    pdf: "/certificates/mern-participation.pdf",
+    pdf: "/certificates/10.mern-participation.pdf",
   },
   {
     title: "Blinkit Clone using AI Workshop",
     issuer: "Cuvette",
     image: blinkitWorkshop,
-    pdf: "/certificates/5. Blinkit Clone using AI Workshop - Cuvette.pdf",
+    pdf: "/certificates/11. Blinkit Clone using AI Workshop - Cuvette.pdf",
   },
 ];
 
