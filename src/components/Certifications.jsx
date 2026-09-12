@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import awscloudpractitioneressentials from "../assets/certificates/aws-cloud-practitioner-essentials.jpg";
+import awscloudpractitioneressentials from "../assets/certificates/AWS-Cloud-Practitioner-Essentials.jpg";
 import deloitteDataAnalytics from "../assets/certificates/deloitte-data-analytics.jpg";
 import iitIndore from "../assets/certificates/iit-indore.jpg";
 import dsaApnaCollege from "../assets/certificates/dsa-apna-college.jpg";
